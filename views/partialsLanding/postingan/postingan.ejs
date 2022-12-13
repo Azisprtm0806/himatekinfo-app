@@ -1,0 +1,32 @@
+<section id="postingan" class="services section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Kegiatan</h2>
+    </div>
+
+    <div class="row">
+        <% post.forEach(post => { %>
+          <% const postDesc = post.deskripsi.substr(0, 100) %>
+        <div class="col-xl-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+            <div class="img"><img src="http://localhost:3000/<%= post.image %>" alt="img1" ></div>
+            <h4><%= post.judul %></h4>
+            <p><%= postDesc %></p>
+              <div class="detail">
+                <a href="/post-detail/<%= post.id %>">Detail</a>
+              </div>
+          </div>
+        </div>
+    <% }) %>     
+
+     <div class="position-relative">
+       <div class="position-absolute top-50 start-50 translate-middle getstarted2">
+         <a href="/post">Lainya...</a>
+        </div>
+     </div>
+
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,27 @@
+postingan: {
+  namaAcara,
+  description,
+  image
+}
+
+divisi: {
+  namaDivisi,
+  image,
+  cardImage,
+  description,
+  kegiatanId
+}
+
+kegiatan: {
+  namaProker,
+  description,
+  image,
+  divisiId,
+  dokumentasiId
+}
+
+dokumentasi: {
+  description,
+  image,
+  kegiatanId
+}

@@ -1,0 +1,90 @@
+<section id="kontak" class="contact">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Kontak</h2>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-5 d-flex align-items-stretch">
+        <div class="info">
+          <div class="address">
+            <i class="bi bi-geo-alt"></i>
+            <h4>Location:</h4>
+            <p>Jl. Sholeh Iskandar, RT.01/RW.10, Kedungbadak, Kec. Tanah Sereal, Kota Bogor, Jawa Barat 16162</p>
+          </div>
+
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <h4>Email:</h4>
+            <p>himatekinfobogor@gmail.com</p>
+          </div>
+
+          <!-- <div class="phone">
+            <i class="bi bi-phone"></i>
+            <h4>Call:</h4>
+            <p>+1 5589 55488 55s</p>
+          </div> -->
+
+          <iframe src="https://maps.google.com/maps?q=universitas%20ibn%20khaldun&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+        </div>
+
+      </div>
+
+      <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+        <form action="/send-contact" method="post" role="form" class="php-email-form">
+          <div class="row">
+            <div class="form-group col-md-6">
+              <label for="name">Nama</label>
+              <input
+              type="text"
+              class="form-control"
+              name="nama"
+              placeholder="Masukan Nama"
+              required
+            />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="name">Email</label>
+              <input
+              type="email"
+              class="form-control form-control-user"
+              id="exampleInputEmail"
+              aria-describedby="emailHelp"
+              placeholder="Masukan Email"
+              name="email"
+              required
+            />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="name">Subjek</label>
+            <input
+            type="text"
+            class="form-control"
+            name="subjek"
+            placeholder="Masukan Subjek"
+            required
+          />
+          </div>
+          <div class="form-group">
+            <label for="name">Pesan</label>
+            <textarea class="form-control" name="pesan" rows="10" required></textarea>
+          </div>
+
+          <div class="my-3">
+            <% if (alert.message != "") { %>
+              <div class="alert alert-<%= alert.status %>" role="alert">
+                <%= alert.message %>
+              </div>
+              <% } %>  
+          </div>
+          
+          <div class="text-center"><button type="submit">Kirim</button></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
