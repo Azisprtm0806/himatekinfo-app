@@ -513,7 +513,6 @@ module.exports = {
     }
   },
   editDivisi: async (req, res) => {
-    console.log(req.files);
     try {
       const { id, namaDivisi, deskripsi } = req.body;
       const divisi = await Divisi.findOne({ _id: id });
